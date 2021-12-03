@@ -16,6 +16,12 @@ var todoStrage = {
     }
 }
 
+//時刻表示（動的
+function showDate(){
+    const date = new Date();
+    document.getElementById("date").innerHTML = date.toLocaleString();
+}
+setInterval('showDate()',1000);
 
 //コンストラクタ
 new Vue({
